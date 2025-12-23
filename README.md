@@ -143,7 +143,7 @@ const dotuananhtb = {
 ## 🏆 GitHub Trophies
 
 <div align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=dotuananhtb&theme=radical&no-frame=true&no-bg=false&margin-w=4&row=2&column=4" alt="GitHub Trophies" />
+  <img src="https://github-profile-trophy.vercel.app/?username=dotuananhtb&theme=radical&no-frame=true&no-bg=true&margin-w=12&margin-h=12&row=2&column=4" alt="GitHub Trophies" />
 </div>
 
 <img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="100%">
@@ -269,7 +269,11 @@ HTML         ██░░░░░░░░░░░░░░░░░░░    
   
 **The snake is eating my contributions! 🐍**
 
-![Snake animation](https://raw.githubusercontent.com/dotuananhtb/dotuananhtb/output/github-contribution-grid-snake-dark.svg)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/dotuananhtb/dotuananhtb/output/github-contribution-grid-snake-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/dotuananhtb/dotuananhtb/output/github-contribution-grid-snake.svg">
+  <img alt="GitHub contribution snake animation" src="https://raw.githubusercontent.com/dotuananhtb/dotuananhtb/output/github-contribution-grid-snake.svg">
+</picture>
 
 </div>
 
