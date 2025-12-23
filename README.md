@@ -119,6 +119,25 @@ const dotuananhtb = {
 
 <img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="100%">
 
+## 🎯 Skills Matrix
+
+<div align="center">
+
+| Skill | Level | Experience |
+|-------|-------|------------|
+| <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg" width="20"> React | ⭐⭐⭐⭐⭐ | ████████████████████ 95% |
+| <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" width="20"> JavaScript | ⭐⭐⭐⭐⭐ | ████████████████████ 95% |
+| <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg" width="20"> Node.js | ⭐⭐⭐⭐⭐ | ███████████████████░ 90% |
+| <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" width="20"> Java | ⭐⭐⭐⭐☆ | ██████████████████░░ 85% |
+| <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original.svg" width="20"> MongoDB | ⭐⭐⭐⭐☆ | █████████████████░░░ 82% |
+| <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original.svg" width="20"> Docker | ⭐⭐⭐⭐☆ | ████████████████░░░░ 78% |
+| <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original.svg" width="20"> PostgreSQL | ⭐⭐⭐⭐☆ | ████████████████░░░░ 75% |
+| <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/amazonwebservices/amazonwebservices-original.svg" width="20"> AWS | ⭐⭐⭐☆☆ | ██████████████░░░░░░ 70% |
+
+</div>
+
+<img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="100%">
+
 ## 📊 GitHub Analytics
 
 <div align="center">
@@ -159,20 +178,19 @@ HTML         ██░░░░░░░░░░░░░░░░░░░    
 
 <img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="100%">
 
-## 🎯 Skills Matrix
+## 📈 Contribution Stats
+
+<div align="center">
+  <img src="https://github-contributor-stats.vercel.app/api?username=dotuananhtb&limit=5&theme=radical&combine_all_yearly_contributions=true&hide_border=true&bg_color=0D1117" alt="Contribution Stats" />
+</div>
+
+<img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="100%">
+
+## 💭 Random Dev Quote
 
 <div align="center">
 
-| Skill | Level | Experience |
-|-------|-------|------------|
-| <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg" width="20"> React | ⭐⭐⭐⭐⭐ | ████████████████████ 95% |
-| <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" width="20"> JavaScript | ⭐⭐⭐⭐⭐ | ████████████████████ 95% |
-| <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg" width="20"> Node.js | ⭐⭐⭐⭐⭐ | ███████████████████░ 90% |
-| <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" width="20"> Java | ⭐⭐⭐⭐☆ | ██████████████████░░ 85% |
-| <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original.svg" width="20"> MongoDB | ⭐⭐⭐⭐☆ | █████████████████░░░ 82% |
-| <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original.svg" width="20"> Docker | ⭐⭐⭐⭐☆ | ████████████████░░░░ 78% |
-| <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original.svg" width="20"> PostgreSQL | ⭐⭐⭐⭐☆ | ████████████████░░░░ 75% |
-| <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/amazonwebservices/amazonwebservices-original.svg" width="20"> AWS | ⭐⭐⭐☆☆ | ██████████████░░░░░░ 70% |
+![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical)
 
 </div>
 
@@ -202,24 +220,6 @@ HTML         ██░░░░░░░░░░░░░░░░░░░    
 
 <div align="center">
   <img src="https://user-images.githubusercontent.com/74038190/212284158-e840e285-664b-44d7-b79b-e264b5e54825.gif" width="400">
-</div>
-
-<img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="100%">
-
-## 💭 Random Dev Quote
-
-<div align="center">
-
-![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical)
-
-</div>
-
-<img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="100%">
-
-## 📈 Contribution Stats
-
-<div align="center">
-  <img src="https://github-contributor-stats.vercel.app/api?username=dotuananhtb&limit=5&theme=radical&combine_all_yearly_contributions=true&hide_border=true&bg_color=0D1117" alt="Contribution Stats" />
 </div>
 
 <img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="100%">
