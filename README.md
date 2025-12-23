@@ -140,41 +140,6 @@ const dotuananhtb = {
 
 <img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="100%">
 
-## 🏆 GitHub Trophies
-
-<div align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=dotuananhtb&theme=radical&no-frame=true&no-bg=true&margin-w=12&margin-h=12&row=2&column=4" alt="GitHub Trophies" />
-</div>
-
-<img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="100%">
-
-## 🎯 Featured Projects
-
-<div align="center">
-
-<a href="https://github.com/dotuananhtb">
-  <img align="center" src="https://github-readme-stats-sigma-five.vercel.app/api/pin/?username=dotuananhtb&repo=your-repo-1&theme=radical&hide_border=true&bg_color=0D1117" />
-</a>
-<a href="https://github.com/dotuananhtb">
-  <img align="center" src="https://github-readme-stats-sigma-five.vercel.app/api/pin/?username=dotuananhtb&repo=your-repo-2&theme=radical&hide_border=true&bg_color=0D1117" />
-</a>
-
-</div>
-
-<div align="center" style="margin-top: 20px;">
-
-### 💼 Professional Projects
-
-| 🛒 E-Commerce Platform | 📱 Social Media App | 📊 Task Management |
-|:---:|:---:|:---:|
-| React • Node.js • MongoDB | React • Express • PostgreSQL | Spring Boot • React • MySQL |
-| JWT Auth • Payment Gateway | Real-time Chat • WebSocket | Agile Workflow • Analytics |
-| [View Project](https://github.com/dotuananhtb) | [View Project](https://github.com/dotuananhtb) | [View Project](https://github.com/dotuananhtb) |
-
-</div>
-
-<img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="100%">
-
 ## 💻 Coding Activity
 
 ```text
@@ -258,22 +223,6 @@ HTML         ██░░░░░░░░░░░░░░░░░░░    
 <div align="center">
 
 ![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical)
-
-</div>
-
-<img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="100%">
-
-## 🐍 Contribution Snake
-
-<div align="center">
-  
-**The snake is eating my contributions! 🐍**
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/dotuananhtb/dotuananhtb/output/github-contribution-grid-snake-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/dotuananhtb/dotuananhtb/output/github-contribution-grid-snake.svg">
-  <img alt="GitHub contribution snake animation" src="https://raw.githubusercontent.com/dotuananhtb/dotuananhtb/output/github-contribution-grid-snake.svg">
-</picture>
 
 </div>
 
