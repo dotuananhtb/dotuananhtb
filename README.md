@@ -206,18 +206,6 @@ HTML         ██░░░░░░░░░░░░░░░░░░░    
 
 <img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="100%">
 
-## 📝 Latest Blog Posts
-
-<!-- BLOG-POST-LIST:START -->
-- 🚀 [Building Scalable REST APIs with Node.js and Express](https://dev.to)
-- 💡 [React Performance Optimization: Tips and Tricks](https://dev.to)
-- 🔐 [Implementing JWT Authentication in MERN Stack](https://dev.to)
-- 📊 [Database Design Best Practices for Web Applications](https://dev.to)
-- 🐳 [Docker for JavaScript Developers: A Complete Guide](https://dev.to)
-<!-- BLOG-POST-LIST:END -->
-
-<img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="100%">
-
 ## 💭 Random Dev Quote
 
 <div align="center">
