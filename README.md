@@ -26,23 +26,23 @@
 
 ```javascript
 const dotuananhtb = {
-    pronouns: "He" | "Him",
-    role: "Full-Stack Developer",
-    location: "Vietnam 🇻🇳",
-    languages: ["Vietnamese", "English"],
-    code: {
-        frontend: ["JavaScript", "TypeScript", "React", "HTML", "CSS"],
-        backend: ["Node.js", "Express", "Java", "Spring Boot"],
-        databases: ["MongoDB", "MySQL", "PostgreSQL", "Redis"],
-        tools: ["Git", "Docker", "AWS", "Postman", "VS Code"]
-    },
-    architecture: {
-        design: ["RESTful API", "Microservices", "MVC"],
-        patterns: ["Observer", "Singleton", "Factory"],
-        principles: ["SOLID", "DRY", "KISS"]
-    },
-    currentFocus: "Building scalable web applications",
-    funFact: "I debug with console.log() and I'm proud of it! 😄"
+  pronouns: "He" | "Him",
+  role: "Full-Stack Developer",
+  location: "Vietnam 🇻🇳",
+  languages: ["Vietnamese", "English"],
+  code: {
+    frontend: ["JavaScript", "TypeScript", "React", "HTML", "CSS"],
+    backend: ["Node.js", "Express", "Java", "Spring Boot"],
+    databases: ["MongoDB", "MySQL", "PostgreSQL", "Redis"],
+    tools: ["Git", "Docker", "AWS", "Postman", "VS Code"],
+  },
+  architecture: {
+    design: ["RESTful API", "Microservices", "MVC"],
+    patterns: ["Observer", "Singleton", "Factory"],
+    principles: ["SOLID", "DRY", "KISS"],
+  },
+  currentFocus: "Building scalable web applications",
+  funFact: "I debug with console.log() and I'm proud of it! 😄",
 };
 ```
 
@@ -62,6 +62,7 @@ const dotuananhtb = {
 <div align="center">
 
 ### 🎨 Frontend Development
+
 <p>
 <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" />
 <img src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E" />
@@ -75,6 +76,7 @@ const dotuananhtb = {
 </p>
 
 ### ⚙️ Backend Development
+
 <p>
 <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" />
 <img src="https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white" />
@@ -85,6 +87,7 @@ const dotuananhtb = {
 </p>
 
 ### 🗄️ Databases
+
 <p>
 <img src="https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white" />
 <img src="https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white" />
@@ -94,6 +97,7 @@ const dotuananhtb = {
 </p>
 
 ### 🛠️ Tools & DevOps
+
 <p>
 <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" />
 <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" />
@@ -123,16 +127,16 @@ const dotuananhtb = {
 
 <div align="center">
 
-| Skill | Level | Experience |
-|-------|-------|------------|
-| <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg" width="20"> React | ⭐⭐⭐⭐⭐ | ████████████████████ 95% |
-| <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" width="20"> JavaScript | ⭐⭐⭐⭐⭐ | ████████████████████ 95% |
-| <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg" width="20"> Node.js | ⭐⭐⭐⭐⭐ | ███████████████████░ 90% |
-| <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" width="20"> Java | ⭐⭐⭐⭐☆ | ██████████████████░░ 85% |
-| <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original.svg" width="20"> MongoDB | ⭐⭐⭐⭐☆ | █████████████████░░░ 82% |
-| <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original.svg" width="20"> Docker | ⭐⭐⭐⭐☆ | ████████████████░░░░ 78% |
-| <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original.svg" width="20"> PostgreSQL | ⭐⭐⭐⭐☆ | ████████████████░░░░ 75% |
-| <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/amazonwebservices/amazonwebservices-original.svg" width="20"> AWS | ⭐⭐⭐☆☆ | ██████████████░░░░░░ 70% |
+| Skill                                                                                                                                       | Level      | Experience               |
+| ------------------------------------------------------------------------------------------------------------------------------------------- | ---------- | ------------------------ |
+| <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg" width="20"> React                       | ⭐⭐⭐⭐⭐ | ████████████████████ 95% |
+| <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" width="20"> JavaScript        | ⭐⭐⭐⭐⭐ | ████████████████████ 95% |
+| <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg" width="20"> Node.js                   | ⭐⭐⭐⭐⭐ | ███████████████████░ 90% |
+| <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" width="20"> Java                          | ⭐⭐⭐⭐☆  | ██████████████████░░ 85% |
+| <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original.svg" width="20"> MongoDB                 | ⭐⭐⭐⭐☆  | █████████████████░░░ 82% |
+| <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original.svg" width="20"> Docker                    | ⭐⭐⭐⭐☆  | ████████████████░░░░ 78% |
+| <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original.svg" width="20"> PostgreSQL        | ⭐⭐⭐⭐☆  | ████████████████░░░░ 75% |
+| <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/amazonwebservices/amazonwebservices-original.svg" width="20"> AWS | ⭐⭐⭐☆☆   | ██████████████░░░░░░ 70% |
 
 </div>
 
@@ -159,30 +163,30 @@ const dotuananhtb = {
 
 <img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="100%">
 
-## 💻 Coding Activity
-
-```text
-🌞 Morning    ████████░░░░░░░░░░░░░   35.2% 
-🌆 Daytime    █████████████░░░░░░░░   52.8% 
-🌃 Evening    ████░░░░░░░░░░░░░░░░░   18.5% 
-🌙 Night      ██░░░░░░░░░░░░░░░░░░░    8.5%
-```
-
-```text
-JavaScript   ████████████████░░░░░   65.2% 
-Java         ██████░░░░░░░░░░░░░░░   22.8% 
-TypeScript   ████░░░░░░░░░░░░░░░░░   15.5% 
-CSS          ███░░░░░░░░░░░░░░░░░░   12.2% 
-HTML         ██░░░░░░░░░░░░░░░░░░░    8.5%
-```
-
-<img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="100%">
-
 ## 📈 Contribution Stats
 
 <div align="center">
   <img src="https://github-contributor-stats.vercel.app/api?username=dotuananhtb&limit=5&theme=radical&combine_all_yearly_contributions=true&hide_border=true&bg_color=0D1117" alt="Contribution Stats" />
 </div>
+
+<img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="100%">
+
+## 💻 Coding Activity
+
+```text
+🌞 Morning    ████████░░░░░░░░░░░░░   35.2%
+🌆 Daytime    █████████████░░░░░░░░   52.8%
+🌃 Evening    ████░░░░░░░░░░░░░░░░░   18.5%
+🌙 Night      ██░░░░░░░░░░░░░░░░░░░    8.5%
+```
+
+```text
+JavaScript   ████████████████░░░░░   65.2%
+Java         ██████░░░░░░░░░░░░░░░   22.8%
+TypeScript   ████░░░░░░░░░░░░░░░░░   15.5%
+CSS          ███░░░░░░░░░░░░░░░░░░   12.2%
+HTML         ██░░░░░░░░░░░░░░░░░░░    8.5%
+```
 
 <img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="100%">
 
