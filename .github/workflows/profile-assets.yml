@@ -1,8 +1,16 @@
 name: Profile assets
 
-# Regenerates the neofetch card and contribution snake, then publishes them
-# to the `output` branch that README.md links to. If a run fails, the branch
-# keeps the last good images, so the profile never shows broken ones.
+# Regenerates the live images (stats panel, contribution graph with snake)
+# and publishes them to the `output` branch that README.md links to. If a run
+# fails, the branch keeps the last good images, so the profile never shows
+# broken ones. Static images live in assets/ (see scripts/build-static-assets.mjs).
+#
+# Work activity: the owner's machine pushes daily counts from a second
+# account to the `activity-data` branch (scripts/export-work-activity.mjs).
+# That branch is not the default branch, so its commits add no contributions.
+#
+# Optional secret PROFILE_STATS_TOKEN: a fine-grained, read-only token of this
+# profile's owner; it lets the stats count private repositories.
 
 on:
   schedule:
@@ -11,6 +19,7 @@ on:
   push:
     branches:
       - main
+      - activity-data
 
 permissions:
   contents: write
@@ -25,25 +34,29 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          ref: main
 
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
           node-version: 22
 
-      - name: Generate neofetch card
-        run: node scripts/neofetch-card.mjs dist/neofetch.svg
+      - name: Fetch work activity
+        run: |
+          if git fetch --depth=1 origin activity-data; then
+            git show origin/activity-data:work-activity.json > work-activity.json
+          else
+            echo "No activity-data branch yet; rendering without work activity."
+          fi
+
+      - name: Render live images
+        run: node scripts/render-live-assets.mjs dist
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          STATS_TOKEN: ${{ secrets.PROFILE_STATS_TOKEN }}
+          WORK_ACTIVITY: work-activity.json
           GITHUB_USER: ${{ github.repository_owner }}
-
-      - name: Generate contribution snake
-        uses: Platane/snk@v3
-        with:
-          github_user_name: ${{ github.repository_owner }}
-          outputs: |
-            dist/snake.svg
-            dist/snake-dark.svg?palette=github-dark
 
       - name: Publish to output branch
         uses: crazy-max/ghaction-github-pages@v4
