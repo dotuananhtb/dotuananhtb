@@ -8,6 +8,7 @@ name: Profile assets
 # Work activity: the owner's machine pushes daily counts from a second
 # account to the `activity-data` branch (scripts/export-work-activity.mjs).
 # That branch is not the default branch, so its commits add no contributions.
+# It holds no workflow file, so the sync job starts this workflow itself.
 #
 # Optional secret PROFILE_STATS_TOKEN: a fine-grained, read-only token of this
 # profile's owner; it lets the stats count private repositories.
@@ -19,7 +20,6 @@ on:
   push:
     branches:
       - main
-      - activity-data
 
 permissions:
   contents: write
