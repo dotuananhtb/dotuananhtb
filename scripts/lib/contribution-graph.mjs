@@ -1,7 +1,8 @@
 // Contribution grid in GitHub's layout (weeks as columns, Sunday on top),
-// with a snake that sweeps the grid column by column and eats every
-// colored cell it passes. Drawn from the merged daily counts, which the
-// stock snake action cannot do because it reads a single account.
+// with a snake that hunts the colored cells: lightest shade first, always
+// heading for the nearest remaining cell of that shade and eating anything
+// on the way. Drawn from the merged daily counts, which the stock snake
+// action cannot do because it reads a single account.
 import { fmt, svgDoc } from './svg-kit.mjs';
 
 const MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
@@ -25,6 +26,49 @@ function levelFor(days) {
   return (c) => (c === 0 ? 0 : c <= q1 ? 1 : c <= q2 ? 2 : c <= q3 ? 3 : 4);
 }
 
+const key = (p) => `${p.col},${p.row}`;
+
+// Plans the snake's walk over grid positions. Targets go by shade, lightest
+// first; among cells of that shade the nearest (Manhattan distance) wins,
+// ties broken left to right. The head walks there along the longer axis
+// first, and every colored cell it touches on the way counts as eaten.
+// Returns the visited positions and, per cell, the step it was first eaten.
+function huntRoute(cells) {
+  const remaining = new Map(cells.filter((c) => c.level > 0).map((c) => [key(c), c]));
+  const eatenAt = new Map();
+  const route = [{ col: 0, row: 0 }];
+  const visit = (pos) => {
+    route.push(pos);
+    const k = key(pos);
+    if (remaining.has(k)) {
+      eatenAt.set(k, route.length - 1);
+      remaining.delete(k);
+    }
+  };
+  visit(route.pop());
+
+  while (remaining.size > 0) {
+    const head = route.at(-1);
+    const shade = Math.min(...[...remaining.values()].map((c) => c.level));
+    let target = null;
+    let best = Infinity;
+    for (const c of remaining.values()) {
+      if (c.level !== shade) continue;
+      const d = Math.abs(c.col - head.col) + Math.abs(c.row - head.row);
+      if (d < best || (d === best && (c.col < target.col || (c.col === target.col && c.row < target.row)))) {
+        best = d;
+        target = c;
+      }
+    }
+    let { col, row } = head;
+    const colsFirst = Math.abs(target.col - col) >= Math.abs(target.row - row);
+    const walkCols = () => { while (col !== target.col) { col += Math.sign(target.col - col); visit({ col, row }); } };
+    const walkRows = () => { while (row !== target.row) { row += Math.sign(target.row - row); visit({ col, row }); } };
+    if (colsFirst) { walkCols(); walkRows(); } else { walkRows(); walkCols(); }
+  }
+  return { route, eatenAt };
+}
+
 export function renderGraph(t, w, days) {
   const wide = w >= 600;
   const weeks = toWeeks(days).slice(wide ? 0 : -26);
@@ -35,13 +79,10 @@ export function renderGraph(t, w, days) {
   const r = Math.max(cell * 0.18, 1.5);
   const center = (col, row) => [col * pitch + cell / 2, top + row * pitch + cell / 2];
 
-  // Snake route: down even columns, up odd ones, through every drawn day.
-  const route = [];
-  weeks.forEach((week, col) => {
-    const ordered = col % 2 === 0 ? week : [...week].reverse();
-    for (const d of ordered) route.push({ ...d, col });
-  });
-  const step = wide ? 0.045 : 0.06;
+  const cells = weeks.flatMap((week, col) => week.map((d) => ({ ...d, col, level: level(d.count) })));
+  const { route, eatenAt } = huntRoute(cells);
+  // Keep one grid step brisk, but cap the whole hunt so the loop stays watchable.
+  const step = Math.min(wide ? 0.05 : 0.07, 40 / route.length);
   const moveEnd = (route.length - 1) * step;
   const cycle = moveEnd + 3;
   const pct = (s) => ((s / cycle) * 100).toFixed(3);
@@ -49,17 +90,16 @@ export function renderGraph(t, w, days) {
   const base = [];
   const lit = [];
   const keyframes = [];
-  route.forEach((d, i) => {
+  cells.forEach((d, i) => {
     const [cx, cy] = center(d.col, d.row);
     const x = (cx - cell / 2).toFixed(1);
     const y = (cy - cell / 2).toFixed(1);
     base.push(`<rect x="${x}" y="${y}" width="${cell.toFixed(1)}" height="${cell.toFixed(1)}" rx="${r.toFixed(1)}" fill="${t.levels[0]}"/>`);
-    const lv = level(d.count);
-    if (lv === 0) return;
-    // Each lit cell disappears when the head reaches it and returns at the end of the loop.
-    const eat = i * step;
+    if (d.level === 0) return;
+    // Each lit cell disappears when the head first reaches it and returns at the end of the loop.
+    const eat = eatenAt.get(key(d)) * step;
     keyframes.push(`@keyframes e${i}{0%,${pct(eat)}%{fill-opacity:1}${pct(eat + 0.05)}%,97%{fill-opacity:0}100%{fill-opacity:1}}`);
-    lit.push(`<rect style="animation:e${i} ${cycle.toFixed(2)}s linear infinite" x="${x}" y="${y}" width="${cell.toFixed(1)}" height="${cell.toFixed(1)}" rx="${r.toFixed(1)}" fill="${t.levels[lv]}"><title>${d.date}: ${d.count}</title></rect>`);
+    lit.push(`<rect style="animation:e${i} ${cycle.toFixed(2)}s linear infinite" x="${x}" y="${y}" width="${cell.toFixed(1)}" height="${cell.toFixed(1)}" rx="${r.toFixed(1)}" fill="${t.levels[d.level]}"><title>${d.date}: ${d.count}</title></rect>`);
   });
 
   // Month labels above the first week that starts in a new month.
