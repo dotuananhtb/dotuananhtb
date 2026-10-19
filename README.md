@@ -33,7 +33,7 @@
   <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/dotuananhtb/dotuananhtb/main/assets/projects-dark-narrow.svg" />
   <source media="(max-width: 600px)" srcset="https://raw.githubusercontent.com/dotuananhtb/dotuananhtb/main/assets/projects-light-narrow.svg" />
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/dotuananhtb/dotuananhtb/main/assets/projects-dark.svg" />
-  <img src="https://raw.githubusercontent.com/dotuananhtb/dotuananhtb/main/assets/projects-light.svg" alt="Projects: Exam and LMS platform, mobile apps, booking system, dev automation" width="100%" />
+  <img src="https://raw.githubusercontent.com/dotuananhtb/dotuananhtb/main/assets/projects-light.svg" alt="Projects: AI learning features (speech scoring, LLM feedback, semantic search, voice tutor), exam and LMS platform, mobile apps, booking system, dev automation" width="100%" />
 </picture>
 
 <sub>These repositories are private for now. Happy to walk you through the code on a call.</sub>
@@ -44,7 +44,16 @@
   <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/dotuananhtb/dotuananhtb/main/assets/stack-dark-narrow.svg" />
   <source media="(max-width: 600px)" srcset="https://raw.githubusercontent.com/dotuananhtb/dotuananhtb/main/assets/stack-light-narrow.svg" />
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/dotuananhtb/dotuananhtb/main/assets/stack-dark.svg" />
-  <img src="https://raw.githubusercontent.com/dotuananhtb/dotuananhtb/main/assets/stack-light.svg" alt="Tech stack: TypeScript, JavaScript, React, Next.js, Tailwind, Flutter, Dart, Node.js, Express, Python, Java, Spring, PostgreSQL, MongoDB, MySQL, Redis, Docker, Nginx, GitHub Actions, Vercel" width="100%" />
+  <img src="https://raw.githubusercontent.com/dotuananhtb/dotuananhtb/main/assets/stack-light.svg" alt="Tech stack. Web: TypeScript, JavaScript, React, Next.js, Tailwind, shadcn/ui, TanStack. Server: Node.js, Express, Python, FastAPI, Java, Spring, Socket.IO. Mobile: Flutter, Dart, Firebase. Data and AI: PostgreSQL, MongoDB, Redis, Qdrant, OpenAI, Anthropic, ONNX. Ops: Docker, Nginx, GitHub Actions, Vercel, Vitest, Playwright, LiveKit." width="100%" />
+</picture>
+
+### `$ cat ~/.agents`
+
+<picture>
+  <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/dotuananhtb/dotuananhtb/main/assets/agents-dark-narrow.svg" />
+  <source media="(max-width: 600px)" srcset="https://raw.githubusercontent.com/dotuananhtb/dotuananhtb/main/assets/agents-light-narrow.svg" />
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/dotuananhtb/dotuananhtb/main/assets/agents-dark.svg" />
+  <img src="https://raw.githubusercontent.com/dotuananhtb/dotuananhtb/main/assets/agents-light.svg" alt="AI coding agents I use: Claude Code, Codex, Gemini, Copilot and Antigravity. Parallel agents in isolated git worktrees, custom MCP servers for task tracking and docs, and reusable skill kits from plan to ship." width="100%" />
 </picture>
 
 ### `$ git log --graph`
