@@ -82,7 +82,7 @@ export function renderGraph(t, w, days) {
   const cells = weeks.flatMap((week, col) => week.map((d) => ({ ...d, col, level: level(d.count) })));
   const { route, eatenAt } = huntRoute(cells);
   // Keep one grid step brisk, but cap the whole hunt so the loop stays watchable.
-  const step = Math.min(wide ? 0.05 : 0.07, 40 / route.length);
+  const step = Math.min(wide ? 0.1 : 0.13, 75 / route.length);
   const moveEnd = (route.length - 1) * step;
   const cycle = moveEnd + 3;
   const pct = (s) => ((s / cycle) * 100).toFixed(3);
