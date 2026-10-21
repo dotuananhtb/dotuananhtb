@@ -10,12 +10,24 @@ const SEARCH_CAP = 1000;
 
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
+// A stalled connection (e.g. the machine dozing mid-request) must fail fast
+// and retry instead of hanging for minutes.
+const REQUEST_TIMEOUT_MS = 30000;
+
 async function request(token, path, init = {}) {
   for (let attempt = 0; attempt < 3; attempt++) {
-    const res = await fetch(`${API}${path}`, {
-      ...init,
-      headers: { Authorization: `Bearer ${token}`, Accept: 'application/vnd.github+json', 'User-Agent': 'profile-assets', ...init.headers },
-    });
+    let res;
+    try {
+      res = await fetch(`${API}${path}`, {
+        ...init,
+        signal: AbortSignal.timeout(REQUEST_TIMEOUT_MS),
+        headers: { Authorization: `Bearer ${token}`, Accept: 'application/vnd.github+json', 'User-Agent': 'profile-assets', ...init.headers },
+      });
+    } catch (err) {
+      if (attempt === 2) throw new Error(`GitHub ${path.split('?')[0]} unreachable: ${err.cause?.code ?? err.name}`);
+      await sleep(5000 * (attempt + 1));
+      continue;
+    }
     if ((res.status === 403 || res.status === 429) && attempt < 2) {
       const reset = Number(res.headers.get('x-ratelimit-reset')) * 1000;
       await sleep(Math.min(Math.max(reset - Date.now(), 5000), 65000));
